@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>CALCULADORA DE REVOADA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/calculadora.css">
+    <link rel="stylesheet" href="css/result.css">
+</head>
+<body>
+    <header class="introduction">
+            <img id="logo-horizontal" src="img/logo-horizontal.png" alt="">
+            <h1>CALCULADORA DE REVOADA</h1>
+            <p>Olá, sinta-se em casa e aproveite nossos serviços! <br> Aqui você pode realizar uma consulta simples, <br> calculando o quanto você irá gastar na sua revoada. <br> Escolha todas as suas preferências, como bares, bebidas e afins. <br> </p>
+            <p><span>INFORME TUDO DA MANEIRA CORRETA E VEJA O <br> QUANTO IRÁ GASTAR NA SUA REVOADA, DE <br> ACORDO COM AS SUAS PREFERÊNCIAS, <br>&dArr; LOGO ABAIXO &dArr;</span></p>
+    </header>
+
+    <main>
+        <section class="calculadora">
+        <form class="calc-revoada">
+            <label>Número de bares que quer ir: </label>
+            <input type="number" class="numero-bares" value="0">
+
+            <label for="nivel-bares">Nível dos bares que quer ir: </label>
+            <select name="nivel-bares" class="nivel-bares">
+                <option value="1" selected>Litrão da Esquina</option>
+                <option value="2">Gim Tônica do Centro</option>
+                <option value="3">Rooftop</option>
+            </select>
+
+            <label>Número de baladas que quer ir: </label>
+            <input type="number" class="numero-baladas" value="0">
+
+            <label for="nivel-balada">Nível da baladas que quer ir: </label>
+            <select name="nivel-balada" class="nivel-baladas">
+                <option value="1" selected>Padrão</option>
+                <option value="2">Rei do Camarote</option>
+            </select>
+
+            <label for="nivel-sede">Nível de sede do rolê: </label>
+            <select name="nivel-sede" class="nivel-sede">
+                <option value="1" selected>Social</option>
+                <option value="2">Comemoração</option>
+                <option value="3">Esquecer Ex</option>
+            </select>
+
+            <label>Quilômetros rodados de Uber (KM): </label>
+            <input type="number" class="km-uber" value="0">
+
+            <label>Dia do rolê: </label>
+            <select name="dia-revoada" class="dia-revoada">
+                <option value="1" selected>Dia de Semana</option>
+                <option value="2">Sexta</option>
+                <option value="3">Sábado</option>
+                <option value="4">Domingo</option>
+            </select>
+
+            <label>Outros Gastos (R$): </label>
+            <input type="number" class="outros-gastos" value="0">
+
+            <a href="#" id="button">Calcular sua revoada</a>
+        </form>
+        </section>
+
+        <script src="js/script.js"></script>
+
+        <div class="calculadora">
+            <p class="resultados-introducao">Pronto! Aqui vai estar o valor que você gastou.</p>
+            <p class="resultado"></p>
+            <form class="calc-revoada">
+                <div id="resultado"></div>
+            </form>
+        </div>
+
+        <script src="js/result.js"></script>
+
+        <div>
+            <p><span>&#9888; Não se esqueça &#9888;</span></p>
+            <li>Não morra!</li>
+            <li>Não seja preso!</li>
+            <li>Não use drogas!</li>
+            <li>Não se apaixone!</li>
+            <li>Se for dirigir, não beba!</li>
+            <li>Ajude quem bebeu demais!</li>
+            <li>Não perca as ligações da mãe!</li>
+            <li>E o principal, para os homens. NÃO É NÃO</li>
+        </div>
+
+        <footer>
+            <img id="logo-footer" src="img/logo-vexpenses.png" alt="">
+            <p>Todos os direitos reservados. By Matheus Donato &copy;</p>
+        </footer>
+    </main>
+</body>
+</html>

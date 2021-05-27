@@ -1,0 +1,54 @@
+.calc-revoada {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 500px;
+    padding: 30px;
+    background-color: rgba(133, 132, 132, 0.123);
+}
+
+label{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: center;
+}
+
+
+input, select {
+    flex: 20px;
+    margin: 5px 0px;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    text-align-last: center;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+#button {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background: #cecece;
+    text-align: center;
+    color: black;
+}
+
+#button:hover {
+    background: black;
+    color: white;
+    transform: scale(1.025);
+    transition: .3s ease-in-out;
+}
+
+#button a {
+    color: black;
+}
